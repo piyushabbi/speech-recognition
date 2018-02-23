@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" />
+  <title>Speech Recognition</title>
+  <style>
+    .smiley {
+      font-size: 24px;
+    }
+    .words,
+    .response-words {
+      border: 1px solid #000;
+      background: rgb(170, 170, 170);
+      color: rgb(28, 30, 34);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="jumbotron">
+      <h1 class="text-center">Speech Recognition</h1>
+    </header>
+    <p class="text-center">Allow browser to record your audio. Then, start speaking. 
+      <span class="smiley">&#9786;</span>
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <section class="words-container">
+            <p>User Input</p>
+            <div class="words"></div>
+          </section>
+        </div>
+        <div class="col-sm-6">
+          <section class="response-container">
+            <p>Machine Response</p>
+            <div class="response-words">
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
